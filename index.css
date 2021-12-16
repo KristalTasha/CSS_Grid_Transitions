@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+overflow-x: hidden;
+overflow-y: scroll;
+
+}
+
+header{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1em; */
+    padding: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    /* margin-right: 5em; */
+    width: 100%;
+    height: 2em;
+
+
+}
+
+.logo{
+    font-size: 2em;
+    color: rgb(173, 58, 96);
+    font-family: 'Corinthia', cursive;
+}
+
+.menuitems{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    width: 65%;
+}
+.menuitems a{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    /* word-wrap: none; */
+     
+
+}
+.menuitems a:hover{
+cursor: pointer;
+}
+
+
+.search{
+    float: right;
+    /* display: flex; */
+    flex-direction: row;
+    
+    /* position: relative; */
+}
+
+
+input:focus{
+    outline: 0;
+}
+
+input{
+    top: 0.5em;
+    width: 0px;
+    transition: width 0.7s;
+    border: none;
+}
+button{
+     /* /* position: absolute; */
+    /* top: 0;
+    left: 0;  */
+    width: 30px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    /* transition: transform 0.7s ease; */
+}
+
+.search.active input{
+    width: 200px;
+}
+
+.search.active button{
+    /* transform:translateX(200px); */
+    /* float: right; */
+}
+
+.home_pic{
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    position: relative;
+}
+
+.landing{
+    display: flex;
+    width: 100%;
+    height: 40em;
+    /* position: relative; */
+    justify-content: center;
+    /* align-items: center;
+    align-content: center; */
+}
+
+.productnavlabel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 8em;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+}
+
+.productnavlabel a{
+    position: relative;
+    align-self: center;
+}
+
+.productnavlabel a:hover{
+    cursor: pointer;
+}
+
+.productgrid{
+    height: 60em;
+    padding-left: 5%;
+    padding-right: 15%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+
+.products{
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sunflower{
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 2 / 4 / 4;
+    object-fit: cover;
+}
+
+.summ{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60em;
+    flex-direction: column;
+    padding-top: 8em;
+}
+.summary{
+    background-color: rgb(236, 214, 221);
+    width: 95%;
+    height: 40em;
+    top: 5em;
+    position: relative;
+    align-self: center;
+}
+
+.blurb{
+    top: 6em;
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    gap: 0.6em;
+    flex-direction: column;
+    color: rgb(105, 43, 64);
+}
+
+.cont{
+   color: rgb(105, 43, 64);
+}
+
+.cont:hover{
+    cursor: pointer;
+}
+
+.ig{
+    top: 10em;
+    position: relative;
+}
+.ig h1{
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: sans-serif;
+    color: rgb(105, 43, 64);
+}
+
+.slider {
+    width: 1000px;
+    height: 200px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1400px;
+    background-color: pink;
+    height: 200px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -200px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -400px;
+  }
+  #slide-4:target ~ .image-container {
+    left: -600px;
+  }
+  #slide-5:target ~ .image-container {
+    left: -800px;
+  }
+  #slide-3:target ~ .image-container {
+    right: 0px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color:palevioletred;
+  }
+
+  .smlinks{
+      top: 2em;
+      text-align: center;
+      position: relative;
+  }
+
+  .pwrd{
+      text-align: center;
+      color: rgb(105, 43, 64);
+      align-self: center;
+      font-family: sans-serif;
+      font-size: 0.8em;
+
+  }
+
+  .power{
+      top: 4em;
+      width: 100%;
+      display: flex;
+      position: relative;
+      height: 8em;
+      justify-content: center;
+  }
